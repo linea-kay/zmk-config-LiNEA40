@@ -3,12 +3,12 @@
 
 / {
     chosen {
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = <&physical_layout0>;
     };
 
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
-        display-name = "default_layout";
+        display-name = "LiNEA40";
 
         kscan = <&kscan0>;
         transform = <&default_transform>;
@@ -56,6 +56,7 @@
             , <&key_physical_attrs 100 100 1100  300       0     0     0>
             , <&key_physical_attrs 100 100 1200  300       0     0     0>
             ;
+        sensor-bindings = <&left_encoder>;
     };
 
     default_transform: keymap_transform0 {
