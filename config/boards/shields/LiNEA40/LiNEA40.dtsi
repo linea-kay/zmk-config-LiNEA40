@@ -3,7 +3,9 @@
 
 / {
     chosen {
-        zmk,physical-layout = <&physical_layout0>;
+        zmk,physical-layout = &physical_layout0;
+        zmk,kscan = &kscan0;
+        zmk,matrix-transform = &default_transform;
     };
 
     physical_layout0: physical_layout_0 {
