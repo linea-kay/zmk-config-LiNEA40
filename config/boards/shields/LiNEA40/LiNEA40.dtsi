@@ -3,12 +3,11 @@
 
 / {
     chosen {
-        zmk,physical-layout = &physical_layout0;
-        zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
+        zmk,physical-layout = <&physical_layout0>;
     };
 
     physical_layout0: physical_layout_0 {
+
         compatible = "zmk,physical-layout";
         display-name = "LiNEA40";
 
